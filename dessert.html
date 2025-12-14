@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desserts - SVtBite</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .more-text {
+      display: none; /* يخفي الوصفة في البداية */
+      margin-top: 10px;
+    }
+    .read-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #8b5cf6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .menu-section {
+      display: flex;
+      flex-direction: column;
+      gap: 30px; /* مسافة بين كل وصفة */
+      margin-top: 20px;
+    }
+    .menu-item img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>tofe-Bite</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="menu.html">Meals</a> |
+      <a href="dessert.html">Desserts</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Homemade Desserts 🍰</h2>
+
+    <section class="menu-section">
+
+  
+      <div class="menu-item">
+        <img src="assets/images/IMG_5548.jpg" alt="Joshua Cake" />
+        <h3> Cupcake</h3>
+        <button class="read-more-btn">the recipe</button>
+        <p class="more-text">
+          <strong>الوصفة:</strong><br><br>
+
+          1. 1 كوب ونصف دقيق<br>
+          2. نصف كوب نشا<br>
+          3. 1 كوب حليب<br>
+          4. 3 بيضات<br>
+          5. نصف كوب زيت<br>
+          6. 1 كوب سكر<br>
+          7. ملعقة فانيليا<br>
+          8. ملعقة صغيرة باكينغ باودر<br>
+          9. رشة ملح<br>
+          10. ننخل الدقيق والنشا والباكنغ باودر سوا مرتين.<br>
+          11. نخفق البيض مع الفانيليا والملح حتى يصبح رغاوي، ثم نضيف السكر ونخفق حتى يصبح كريمي.<br>
+          12. نخلط الحليب والزيت، ثم نضيف المواد الجافة تدريجيًا ونضربها جيدًا.<br>
+          13. نخلط خليط الحليب والزيت مع كريمة البيض براحة حتى يتمازجوا جيدًا.<br>
+          14. نرص ورق الكب كيك في صينية مخصصة، ونملأ الخليط فقط حتى 3/4 الارتفاع لأنه سيرتفع في الفرن.<br>
+          15. ندخله في فرن مسخن مسبقًا على درجة حرارة 180°م من الأسفل فقط، وبعد أن ينضج يمكن فتحه من الأعلى قليلًا ليأخذ اللون الذهبي.<br><br>
+
+          وبالعافية عليكم 😘
+        </p>
+      </div>
+
+      <!-- وصفات "Coming Soon" -->
+      <div class="menu-item">
+        <img src="" alt="Dessert 2" />
+        <h3>Coming Soon</h3>
+        <button class="read-more-btn">the recipe</button>
+        <p class="more-text">New homemade dessert will be added soon.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="" alt="Dessert 3" />
+        <h3>Coming Soon</h3>
+        <button class="read-more-btn">the recipe</button>
+        <p class="more-text">New homemade dessert will be added soon.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="" alt="Dessert 4" />
+        <h3>Coming Soon</h3>
+        <button class="read-more-btn">the recipe</button>
+        <p class="more-text">New homemade dessert will be added soon.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.read-more-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const moreText = btn.parentElement.querySelector('.more-text');
+        if (!moreText) return;
+        if (moreText.style.display === 'block') {
+          moreText.style.display = 'none';
+          btn.textContent = 'the recipe';
+        } else {
+          moreText.style.display = 'block';
+          btn.textContent = 'Show Less';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bite</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .more-text {
+      display: none; /* يخفي الوصفة في البداية */
+      margin-top: 10px;
+    }
+    .read-more-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 5px 10px;
+      background-color: #8b5cf6;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>tofe-Bite</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="menu.html">Meals</a> |
+      <a href="dessert.html">Desserts</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Homemade Meals 🍱</h2>
+
+    <section class="menu-section">
+
+      <div class="menu-item">
+        <img src="assets/images/IMG_5547.jpg" alt="Shabu Shabu" />
+       <h3>hot dog Sandwiches</h3>
+        <button class="read-more-btn">the recipe</button>
+<p class="more-text">
+<strong>الوصفة:</strong><br><br>
+
+<strong>الساندويش الأول: هوت دوغ فاهيتا</strong><br>
+1. نجهز الخضار (بصل، جزر، فلفل أخضر) أو أي نوع خضار تحبونه ونقطعها شرائح.<br>
+2. نقطع الهوت دوغ إلى قطع صغيرة.<br>
+3. نقلب الخضار في قليل من الزيت على نار هادئة، ثم نضيف الهوت دوغ.<br>
+4. بعد أن يتحمروا، نضيف كمية بسيطة من الماء، ملح، فلفل أسود، رشة كزبرة، ملعقة صغيرة صلصة طماطم، وملعقة صغيرة صويا صوص (اختياري).<br>
+5. نقلبهم حتى تستوي وتنشف الموية.<br>
+6. نشيل الخليط من الطوة، ونفتح العيشة ونشوي الجزء الداخلي قليلًا ليأخذ نكهة.<br>
+7. ندهن العيش بمايونيز أو تومية، نضع خس أو ملفوف مبشور، ثم نضيف الفاهيتا.<br>
+8. الساندويش جاهز للتقديم 😍<br><br>
+
+<strong>الساندويش الثاني: هوت دوغ بالجبنة والخس</strong><br>
+1. نحمر الهوت دوغ في الزيت على النار، أو ندهنه بالزبدة وندخله الفرن 10 دقائق، أو يمكن تسخينه في المايكروويف.<br>
+2. في واحدة من العيشات، نضيف صوص جبنة شيدر، كاتشب، وخس.<br>
+3. الساندويش جاهز للتقديم ♥️😋<br><br>
+
+<strong>الساندويش الثالث: هوت دوغ بالجبن المتنوع والشيبس</strong><br>
+1. نحمر الهوت دوغ بنفس طريقة الساندويش الثاني.<br>
+2. في العيشة، نضع مايونيز، جبنة مثلثات، جبنة شيدر، وشيبس بالجبنة.<br>
+3. الساندويش جاهز للتقديم ♥️😋<br><br>
+
+<strong>صوص المايونيز:</strong><br>
+- 1 كوب حليب<br>
+- 1 ملعقة صغيرة ملح<br>
+- 1 ملعقة عصير ليمون<br>
+- 1 ملعقة خل<br>
+- 4 جبنة مثلثات<br>
+- نخلط المكونات في الخلاط، ثم نضيف 1.5 كوب زيت تدريجيًا حتى يتماسك المايونيز.<br>
+- يحفظ في الثلاجة.<br><br>
+
+<strong>صوص الشيدر:</strong><br>
+- 3/4 كوب حليب<br>
+- 1 ملعقة دقيق<br>
+- رشة ملح<br>
+- نخلط المكونات جيدًا، ثم نرفعها على النار.<br>
+- نضيف نصف كوب جبنة شيدر مبشورة أو صوص الشيدر الجاهز المتوفر في البقالات.<br>
+</p>
+      </div>
+
+
+      <div class="menu-item">
+        <img src="" alt="Recipe 2" />
+        <h3>Coming Soon</h3>
+        <button class="read-more-btn">the recipe</button>
+        <p class="more-text">New homemade meal will be added soon.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="" alt="Recipe 3" />
+        <h3>Coming Soon</h3>
+        <button class="read-more-btn">the recipe</button>
+        <p class="more-text">New homemade meal will be added soon.</p>
+      </div>
+
+      <div class="menu-item">
+        <img src="" alt="Recipe 4" />
+        <h3>Coming Soon</h3>
+        <button class="read-more-btn">the recipe</button>
+        <p class="more-text">New homemade meal will be added soon.</p>
+      </div>
+
+    </section>
+  </main>
+
+  <script>
+    const buttons = document.querySelectorAll('.read-more-btn');
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const moreText = btn.nextElementSibling;
+        if (moreText.style.display === 'none') {
+          moreText.style.display = 'block';
+          btn.textContent = 'Show Less';
+        } else {
+          moreText.style.display = 'none';
+          btn.textContent = 'the recipe';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
