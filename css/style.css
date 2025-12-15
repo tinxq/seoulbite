@@ -64,9 +64,7 @@ nav a:hover {
   transition: background-color 0.3s ease;
 }
 
-.banner button:hover {
-  background-color: #5e35b1;
-}
+
 
 main {
   max-width: 600px;
@@ -134,9 +132,6 @@ form button:hover {
   transition: transform 0.3s ease;
 }
 
-.menu-item:hover {
-  transform: scale(1.03);
-}
 
 .menu-item img {
   width: 100%;
